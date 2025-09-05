@@ -1,73 +1,63 @@
-# Welcome to your Lovable project
+# The Ark SPA
 
-## Project info
+A modern single-page application built with React and TypeScript.
 
-**URL**: https://lovable.dev/projects/0e897ccd-dbf0-427d-b586-16527adb09cd
+## Project Overview
 
-## How can I edit this code?
+This project serves as a web application focused on providing a seamless user experience with modern web technologies.
 
-There are several ways of editing your application.
+## Technologies Used
 
-**Use Lovable**
+- Vite - Next Generation Frontend Tooling
+- React - A JavaScript library for building user interfaces
+- TypeScript - JavaScript with syntax for types
+- shadcn-ui - Re-usable components built with Radix UI and Tailwind CSS
+- Tailwind CSS - A utility-first CSS framework
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/0e897ccd-dbf0-427d-b586-16527adb09cd) and start prompting.
+## Getting Started
 
-Changes made via Lovable will be committed automatically to this repo.
+1. Clone the repository:
+   ```sh
+   git clone <repository-url>
+   ```
 
-**Use your preferred IDE**
+2. Navigate to the project directory:
+   ```sh
+   cd the-ark-spa
+   ```
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+3. Install dependencies:
+   ```sh
+   npm install
+   ```
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+4. Start the development server:
+   ```sh
+   npm run dev
+   ```
 
-Follow these steps:
+## Development
+
+The application will be available at `http://localhost:5173` by default.
+
+## Building for Production
+
+To create a production build:
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+npm run build
 ```
 
-**Edit a file directly in GitHub**
+## Scripts
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build locally
 
-**Use GitHub Codespaces**
+## Contributing
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/0e897ccd-dbf0-427d-b586-16527adb09cd) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+1. Fork the repository
+2. Create your feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a new Pull Request
