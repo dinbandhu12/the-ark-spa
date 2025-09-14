@@ -4,73 +4,129 @@ import { Link } from "react-router-dom";
 import { Sparkles, Heart, Leaf, Star } from "lucide-react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import Gallery from "@/components/Gallery";
 import spaHero from "@/assets/spa-hero.jpg";
 import spaTreatment from "@/assets/spa-treatment.jpg";
+import img01 from "@/assets/gallery-images/img01.webp";
+import img02 from "@/assets/gallery-images/img02.webp";
+import img03 from "@/assets/gallery-images/img03.webp";
+import img04 from "@/assets/gallery-images/img04.webp";
+import img05 from "@/assets/gallery-images/img05.webp";
+import img06 from "@/assets/gallery-images/img06.webp";
+import img07 from "@/assets/gallery-images/img07.webp";
+import img08 from "@/assets/gallery-images/img08.webp";
+import img09 from "@/assets/gallery-images/img09.webp";
+import img10 from "@/assets/gallery-images/img10.webp";
+import img11 from "@/assets/gallery-images/img11.webp";
+import img12 from "@/assets/gallery-images/img12.webp";
+import img13 from "@/assets/gallery-images/img13.webp";
+import img14 from "@/assets/gallery-images/img14.webp";
+import img15 from "@/assets/gallery-images/img15.webp";
+import img16 from "@/assets/gallery-images/img16.webp";
+import img17 from "@/assets/gallery-images/img17.webp";
+import img18 from "@/assets/gallery-images/img18.webp";
+import img19 from "@/assets/gallery-images/img19.webp";
+import img20 from "@/assets/gallery-images/img20.webp";
+import img21 from "@/assets/gallery-images/img21.webp";
+import img22 from "@/assets/gallery-images/img22.webp";
+import img23 from "@/assets/gallery-images/img23.webp";
+import img24 from "@/assets/gallery-images/img24.webp";
+import img25 from "@/assets/gallery-images/img25.webp";
 
 const Home = () => {
+
   const services = [
     {
       icon: Sparkles,
       title: "Facial Treatments",
-      description: "Rejuvenating facials that restore your natural glow and vitality."
+      description: "Rejuvenating facials that restore your natural glow and vitality.",
+      // price: "From $95",
+      // duration: "45-75 min"
     },
     {
       icon: Heart,
       title: "Massage Therapy",
-      description: "Therapeutic massages to release tension and promote deep relaxation."
+      description: "Therapeutic massages to release tension and promote deep relaxation.",
+      // price: "From $110",
+      // duration: "60-90 min"
     },
     {
       icon: Leaf,
       title: "Body Treatments",
-      description: "Luxurious body wraps and scrubs for ultimate skin nourishment."
+      description: "Luxurious body wraps and scrubs for ultimate skin nourishment.",
+      // price: "From $85",
+      // duration: "45-90 min"
     }
+  ];
+
+  // Gallery images - Local spa images
+  const galleryImages = [
+    img01, img02, img03, img04, img05, img06, img07, img08, img09, img10,
+    img11, img12, img13, img14, img15, img16, img17, img18, img19, img20,
+    img21, img22, img23, img24, img25
   ];
 
   const testimonials = [
     {
-      name: "Emma Johnson",
+      name: "Priya Sharma",
+      // country: "India",
       rating: 5,
-      text: "The most relaxing experience I've ever had. The staff is incredibly professional and the atmosphere is pure bliss."
+      text: "Absolutely amazing experience! The atmosphere here is so peaceful and relaxing. The facial treatment I received was truly exceptional and left my skin glowing."
     },
     {
-      name: "Michael Chen",
+      name: "Akira Tanaka",
+      // country: "Japan",
       rating: 5,
-      text: "Amazing massage therapy! I left feeling completely renewed and stress-free. Highly recommend The Ark Spa."
+      text: "Wonderful spa experience! The staff's professional service and the relaxing atmosphere really impressed me. I will definitely come back again."
     },
     {
-      name: "Sarah Williams",
+      name: "Maria Rodriguez",
+      // country: "Spain",
       rating: 5,
-      text: "The facial treatment was exceptional. My skin has never looked better. This place is truly a sanctuary."
+      text: "A truly relaxing experience. The massage was exceptional and the environment is perfect for disconnecting from daily stress. Highly recommended."
+    },
+    {
+      name: "James Thompson",
+      // country: "Australia",
+      rating: 5,
+      text: "The most luxurious spa experience I've ever had. The attention to detail and the serene atmosphere made it absolutely perfect. Worth every penny!"
+    },
+    {
+      name: "Fatima Al-Zahra",
+      // country: "UAE",
+      rating: 5,
+      text: "An unforgettable experience! The service is excellent and the atmosphere is very peaceful. The treatment I received was wonderful and I will definitely return."
     }
   ];
 
+
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen w-full max-w-full overflow-x-hidden">
       <Header />
       
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative h-[85vh] sm:h-[90vh] md:min-h-screen flex items-center justify-center overflow-hidden pt-16 w-full max-w-full">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${spaHero})` }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/40 to-transparent" />
         
-        <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-foreground">
+        <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 sm:mb-6 text-foreground">
             Your Sanctuary of
             <span className="block bg-gradient-to-r from-primary to-sage bg-clip-text text-transparent">
               Wellness & Peace
             </span>
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl md:text-2xl lg:text-2xl text-muted-foreground mb-6 sm:mb-8 max-w-2xl mx-auto px-2">
             Escape the ordinary and immerse yourself in pure tranquility at The Ark Spa
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="text-lg px-8 py-6">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
+            <Button size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 w-full sm:w-auto">
               Book Your Experience
             </Button>
-            <Button variant="outline" size="lg" className="text-lg px-8 py-6">
+            <Button variant="outline" size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 w-full sm:w-auto">
               <Link to="/services">Explore Services</Link>
             </Button>
           </div>
@@ -78,82 +134,120 @@ const Home = () => {
       </section>
 
       {/* Featured Services */}
-      <section className="py-20 bg-secondary/30">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">Our Signature Services</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+      <section className="py-12 sm:py-16 lg:py-20 bg-secondary/30">
+        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Section Header */}
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">Our Signature Services</h2>
+            <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto px-2">
               Discover our carefully curated treatments designed to restore your body, mind, and spirit
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Services Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 w-full">
             {services.map((service, index) => (
-              <Card key={index} className="group hover:shadow-lg transition-all duration-300">
-                <CardContent className="p-8 text-center">
-                  <div className="mb-6 mx-auto w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                    <service.icon className="h-8 w-8 text-primary" />
+              <div key={index} className="w-full max-w-full">
+                <div className="bg-white dark:bg-gray-900 rounded-xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 h-full flex flex-col">
+                  {/* Icon */}
+                  <div className="mb-6 mx-auto">
+                    <div className="w-16 h-16 sm:w-20 sm:h-20 bg-primary/10 rounded-2xl flex items-center justify-center">
+                      <service.icon className="h-8 w-8 sm:h-10 sm:w-10 text-primary" />
+                    </div>
                   </div>
-                  <h3 className="text-xl font-semibold mb-4">{service.title}</h3>
-                  <p className="text-muted-foreground">{service.description}</p>
-                </CardContent>
-              </Card>
+
+                  {/* Content */}
+                  <div className="text-center flex-grow">
+                    <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-3 sm:mb-4">{service.title}</h3>
+                    <p className="text-muted-foreground leading-relaxed text-base sm:text-lg lg:text-xl mb-6">{service.description}</p>
+                  </div>
+
+                  {/* Button */}
+                  <button className="w-full bg-gradient-to-r from-primary to-sage hover:from-primary/90 hover:to-sage/90 text-white py-3 sm:py-4 px-6 rounded-lg font-medium transition-all duration-300 shadow-md hover:shadow-lg text-base sm:text-lg">
+                    Book Now
+                  </button>
+                </div>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
       {/* About Preview */}
-      <section className="py-20">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+      <section className="py-12 sm:py-16 lg:py-20 w-full max-w-full overflow-x-hidden">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
+            <div className="order-2 lg:order-1">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">
                 Where Luxury Meets
                 <span className="block text-primary">Tranquility</span>
               </h2>
-              <p className="text-lg text-muted-foreground mb-6">
+              <p className="text-lg sm:text-xl text-muted-foreground mb-4 sm:mb-6">
                 At The Ark Spa, we believe that true wellness begins with inner peace. Our carefully designed treatments and serene environment provide the perfect escape from life's daily stresses.
               </p>
-              <p className="text-lg text-muted-foreground mb-8">
+              <p className="text-lg sm:text-xl text-muted-foreground mb-6 sm:mb-8">
                 Experience the perfect harmony of ancient wellness traditions and modern luxury in our peaceful sanctuary.
               </p>
-              <Button asChild variant="outline" size="lg">
+              <Button asChild variant="outline" size="lg" className="w-full sm:w-auto">
                 <Link to="/about">Learn More About Us</Link>
               </Button>
             </div>
-            <div className="relative">
+            <div className="relative order-1 lg:order-2">
               <img 
                 src={spaTreatment}
                 alt="Spa treatment room"
-                className="rounded-lg shadow-lg"
+                className="rounded-lg shadow-lg w-full h-auto"
               />
             </div>
           </div>
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="py-20 bg-accent/30">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">What Our Guests Say</h2>
-            <p className="text-xl text-muted-foreground">
-              Discover why our guests choose The Ark Spa for their wellness journey
+      {/* Gallery Section */}
+      <section className="py-12 sm:py-16 lg:py-20 bg-secondary/30 w-full max-w-full overflow-x-hidden">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">Our Spa Gallery</h2>
+            <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto px-4">
+              Take a visual journey through our serene spaces and luxurious treatments
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <Gallery images={galleryImages} />
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="py-12 sm:py-16 lg:py-20 bg-accent/30 w-full max-w-full overflow-x-hidden">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">What Our Guests Say</h2>
+            <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground px-4">
+              Discover why our guests from around the world choose The Ark Spa for their wellness journey
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {testimonials.map((testimonial, index) => (
-              <Card key={index} className="bg-card/50">
-                <CardContent className="p-6">
-                  <div className="flex gap-1 mb-4">
+              <Card key={index} className="bg-card/50 hover:shadow-lg transition-all duration-300 group">
+                <CardContent className="p-4 sm:p-6">
+                  <div className="flex gap-1 mb-3 sm:mb-4">
                     {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="h-5 w-5 fill-luxury text-luxury" />
+                      <Star key={i} className="h-4 w-4 sm:h-5 sm:w-5 fill-luxury text-luxury" />
                     ))}
                   </div>
-                  <p className="text-muted-foreground mb-4 italic">"{testimonial.text}"</p>
-                  <p className="font-semibold text-foreground">— {testimonial.name}</p>
+                  <p className="text-base sm:text-lg text-muted-foreground mb-4 sm:mb-6 italic leading-relaxed">"{testimonial.text}"</p>
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <p className="font-semibold text-foreground text-base sm:text-lg">{testimonial.name}</p>
+                      {/* <p className="text-xs sm:text-sm text-primary font-medium">{testimonial.country}</p> */}
+                    </div>
+                    <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-primary/20 to-sage/20 rounded-full flex items-center justify-center">
+                      <span className="text-primary font-bold text-xs sm:text-sm">
+                        {testimonial.name.split(' ').map(n => n[0]).join('')}
+                      </span>
+                    </div>
+                  </div>
                 </CardContent>
               </Card>
             ))}

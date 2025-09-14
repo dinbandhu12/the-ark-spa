@@ -5,17 +5,17 @@ const Footer = () => {
   return (
     <footer className="bg-secondary/50 border-t border-border">
       <div className="container mx-auto px-4 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Brand */}
-          <div className="space-y-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8">
+          {/* Brand - Take more space */}
+          <div className="space-y-4 md:col-span-2 lg:col-span-2">
             <Link to="/" className="flex items-center gap-2">
               <div className="p-2 bg-primary/10 rounded-full">
                 <Leaf className="h-6 w-6 text-primary" />
               </div>
               <span className="text-xl font-bold text-foreground">The Ark Spa</span>
             </Link>
-            <p className="text-muted-foreground text-sm">
-              Your sanctuary for relaxation, wellness, and rejuvenation. Experience the perfect blend of luxury and tranquility.
+            <p className="text-muted-foreground text-base">
+              Your sanctuary for relaxation, wellness, and rejuvenation. Experience the perfect blend of luxury and tranquility at our premium spa facility. We offer world-class treatments designed to restore your body, mind, and spirit.
             </p>
           </div>
 
@@ -23,16 +23,16 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="font-semibold text-foreground">Quick Links</h3>
             <nav className="flex flex-col gap-2">
-              <Link to="/" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+              <Link to="/" className="text-base text-muted-foreground hover:text-primary transition-colors">
                 Home
               </Link>
-              <Link to="/about" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+              <Link to="/about" className="text-base text-muted-foreground hover:text-primary transition-colors">
                 About
               </Link>
-              <Link to="/services" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+              <Link to="/services" className="text-base text-muted-foreground hover:text-primary transition-colors">
                 Services
               </Link>
-              <Link to="/contact" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+              <Link to="/contact" className="text-base text-muted-foreground hover:text-primary transition-colors">
                 Contact
               </Link>
             </nav>
@@ -44,15 +44,15 @@ const Footer = () => {
             <div className="space-y-2">
               <div className="flex items-center gap-2">
                 <Phone className="h-4 w-4 text-primary" />
-                <span className="text-sm text-muted-foreground">+1 (555) 123-4567</span>
+                <span className="text-base text-muted-foreground">+1 (555) 123-4567</span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-primary" />
-                <span className="text-sm text-muted-foreground">info@thearkspa.com</span>
+                <span className="text-base text-muted-foreground">info@thearkspa.com</span>
               </div>
               <div className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 text-primary mt-0.5" />
-                <span className="text-sm text-muted-foreground">
+                <span className="text-base text-muted-foreground">
                   123 Wellness Avenue<br />
                   Serenity City, SC 12345
                 </span>
@@ -78,7 +78,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-border mt-8 pt-8 text-center">
-          <p className="text-sm text-muted-foreground">
+          <p className="text-base text-muted-foreground">
             © 2024 The Ark Spa. All rights reserved.
           </p>
         </div>
