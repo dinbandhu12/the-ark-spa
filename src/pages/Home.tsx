@@ -7,31 +7,6 @@ import Footer from "@/components/layout/Footer";
 import Gallery from "@/components/Gallery";
 import spaHero from "@/assets/spa-hero.jpg";
 import spaTreatment from "@/assets/spa-treatment.jpg";
-import img01 from "@/assets/gallery-images/img01.webp";
-import img02 from "@/assets/gallery-images/img02.webp";
-import img03 from "@/assets/gallery-images/img03.webp";
-import img04 from "@/assets/gallery-images/img04.webp";
-import img05 from "@/assets/gallery-images/img05.webp";
-import img06 from "@/assets/gallery-images/img06.webp";
-import img07 from "@/assets/gallery-images/img07.webp";
-import img08 from "@/assets/gallery-images/img08.webp";
-import img09 from "@/assets/gallery-images/img09.webp";
-import img10 from "@/assets/gallery-images/img10.webp";
-import img11 from "@/assets/gallery-images/img11.webp";
-import img12 from "@/assets/gallery-images/img12.webp";
-import img13 from "@/assets/gallery-images/img13.webp";
-import img14 from "@/assets/gallery-images/img14.webp";
-import img15 from "@/assets/gallery-images/img15.webp";
-import img16 from "@/assets/gallery-images/img16.webp";
-import img17 from "@/assets/gallery-images/img17.webp";
-import img18 from "@/assets/gallery-images/img18.webp";
-import img19 from "@/assets/gallery-images/img19.webp";
-import img20 from "@/assets/gallery-images/img20.webp";
-import img21 from "@/assets/gallery-images/img21.webp";
-import img22 from "@/assets/gallery-images/img22.webp";
-import img23 from "@/assets/gallery-images/img23.webp";
-import img24 from "@/assets/gallery-images/img24.webp";
-import img25 from "@/assets/gallery-images/img25.webp";
 
 const Home = () => {
 
@@ -60,11 +35,7 @@ const Home = () => {
   ];
 
   // Gallery images - Local spa images
-  const galleryImages = [
-    img01, img02, img03, img04, img05, img06, img07, img08, img09, img10,
-    img11, img12, img13, img14, img15, img16, img17, img18, img19, img20,
-    img21, img22, img23, img24, img25
-  ];
+  const galleryImages: string[] = [];
 
   const testimonials = [
     {
