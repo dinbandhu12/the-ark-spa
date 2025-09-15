@@ -7,6 +7,16 @@ import Footer from "@/components/layout/Footer";
 import Gallery from "@/components/Gallery";
 import spaHero from "@/assets/spa-hero.jpg";
 import spaTreatment from "@/assets/spa-treatment.jpg";
+import img01 from "@/assets/gallery-images/img01.webp";
+import img02 from "@/assets/gallery-images/img02.webp";
+import img03 from "@/assets/gallery-images/img03.webp";
+import img04 from "@/assets/gallery-images/img04.webp";
+import img05 from "@/assets/gallery-images/img05.webp";
+import img06 from "@/assets/gallery-images/img06.webp";
+import img07 from "@/assets/gallery-images/img07.webp";
+import img08 from "@/assets/gallery-images/img08.webp";
+import img09 from "@/assets/gallery-images/img09.webp";
+import img10 from "@/assets/gallery-images/img10.webp";
 
 const Home = () => {
 
@@ -35,7 +45,9 @@ const Home = () => {
   ];
 
   // Gallery images - Local spa images
-  const galleryImages: string[] = [];
+  const galleryImages = [
+    img01, img02, img03, img04, img05, img06, img07, img08, img09, img10
+  ];
 
   const testimonials = [
     {

@@ -46,8 +46,8 @@ const Gallery = ({ images }: GalleryProps) => {
 
   return (
     <>
-      {/* Responsive grid: 2 cols on mobile, 3 on tablet, 4 on desktop */}
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-4">
+      {/* Responsive grid: 2 cols on mobile, 3 on tablet, 5 on desktop */}
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 md:gap-4">
         {images.slice(0, 12).map((image, index) => (
           <div
             key={index}

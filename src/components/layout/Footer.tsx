@@ -44,17 +44,21 @@ const Footer = () => {
             <div className="space-y-2">
               <div className="flex items-center gap-2">
                 <Phone className="h-4 w-4 text-primary" />
-                <span className="text-base text-muted-foreground">+1 (555) 123-4567</span>
+                <a href="tel:+918296846578" className="text-base text-muted-foreground hover:text-primary transition-colors">
+                  +91 82968 46578
+                </a>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-primary" />
-                <span className="text-base text-muted-foreground">info@thearkspa.com</span>
+                <a href="mailto:theearkspa@gmail.com" className="text-base text-muted-foreground hover:text-primary transition-colors">
+                  theearkspa@gmail.com
+                </a>
               </div>
               <div className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 text-primary mt-0.5" />
                 <span className="text-base text-muted-foreground">
-                  123 Wellness Avenue<br />
-                  Serenity City, SC 12345
+                  The Ark Spa<br />
+                  Bangalore, India
                 </span>
               </div>
             </div>
@@ -64,16 +68,19 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="font-semibold text-foreground">Follow Us</h3>
             <div className="flex gap-3">
-              <a href="#" className="p-2 bg-primary/10 rounded-full hover:bg-primary/20 transition-colors">
+              <a href="https://www.instagram.com/thearkspa?igsh=MWh2cGhmcTljNmFieQ==" target="_blank" rel="noopener noreferrer" className="p-2 bg-primary/10 rounded-full hover:bg-primary/20 transition-colors">
                 <Instagram className="h-4 w-4 text-primary" />
               </a>
-              <a href="#" className="p-2 bg-primary/10 rounded-full hover:bg-primary/20 transition-colors">
+              <a href="#" className="p-2 bg-primary/10 rounded-full hover:bg-primary/20 transition-colors opacity-50 cursor-not-allowed">
                 <Facebook className="h-4 w-4 text-primary" />
               </a>
-              <a href="#" className="p-2 bg-primary/10 rounded-full hover:bg-primary/20 transition-colors">
+              <a href="#" className="p-2 bg-primary/10 rounded-full hover:bg-primary/20 transition-colors opacity-50 cursor-not-allowed">
                 <Twitter className="h-4 w-4 text-primary" />
               </a>
             </div>
+            <p className="text-xs text-muted-foreground">
+              More social links coming soon!
+            </p>
           </div>
         </div>
 
