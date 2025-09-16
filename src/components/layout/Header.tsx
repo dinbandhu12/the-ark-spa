@@ -36,7 +36,7 @@ const Header = () => {
   }, [isMenuOpen]);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-border w-full">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background/10 backdrop-blur-md border-border w-full">
       <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between md:justify-center h-16 w-full relative">
           {/* Logo */}
@@ -87,7 +87,7 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden absolute top-full left-0 right-0 border-t border-border bg-background/95 backdrop-blur-md w-full">
+          <div className="md:hidden absolute top-full left-0 right-0 border-t border-border bg-background backdrop-blur-md w-full">
             <nav className="px-4 py-6 space-y-4 flex flex-col items-center">
               {navigation.map((item) => (
                 <Link

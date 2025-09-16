@@ -41,6 +41,12 @@ All colors MUST be HSL.
     --purple: 280 35% 60%;
     --purple-foreground: 0 0% 100%;
 
+    --glass-blue: 220 40% 85%;
+    --glass-blue-foreground: 220 20% 20%;
+
+    --mobile-nav-blue: 220 60% 70%;
+    --mobile-nav-blue-foreground: 0 0% 100%;
+
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 

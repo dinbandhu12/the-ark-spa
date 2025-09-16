@@ -215,11 +215,11 @@ const Services = () => {
       <section className="py-16 bg-secondary/30">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-3 mb-4">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-4">
               <div className="p-3 bg-primary/10 rounded-full">
                 <Heart className="h-8 w-8 text-primary" />
               </div>
-              <h2 className="text-4xl font-bold">Traditional Massage Services</h2>
+              <h2 className="text-4xl font-bold text-center">Traditional Massage Services</h2>
             </div>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Experience our range of traditional and therapeutic massage treatments
@@ -271,11 +271,11 @@ const Services = () => {
       <section className="py-16">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-3 mb-4">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-4">
               <div className="p-3 bg-primary/10 rounded-full">
                 <Crown className="h-8 w-8 text-primary" />
               </div>
-              <h2 className="text-4xl font-bold">The Ark Luxury Room Service</h2>
+              <h2 className="text-4xl font-bold text-center">The Ark Luxury Room Service</h2>
             </div>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Premium spa experience with Jacuzzi, Steam, and Shower facilities
@@ -367,11 +367,11 @@ const Services = () => {
       <section className="py-16 bg-gradient-to-r from-primary/5 to-sage/5">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-3 mb-4">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-4">
               <div className="p-3 bg-primary/10 rounded-full">
                 <Gem className="h-8 w-8 text-primary" />
               </div>
-              <h2 className="text-4xl font-bold">Membership Packages</h2>
+              <h2 className="text-4xl font-bold text-center">Membership Packages</h2>
             </div>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Choose from our exclusive membership tiers for unlimited wellness experiences

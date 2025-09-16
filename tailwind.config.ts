@@ -64,6 +64,14 @@ export default {
 					DEFAULT: 'hsl(var(--purple))',
 					foreground: 'hsl(var(--purple-foreground))'
 				},
+				'glass-blue': {
+					DEFAULT: 'hsl(var(--glass-blue))',
+					foreground: 'hsl(var(--glass-blue-foreground))'
+				},
+				'mobile-nav-blue': {
+					DEFAULT: 'hsl(var(--mobile-nav-blue))',
+					foreground: 'hsl(var(--mobile-nav-blue-foreground))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
