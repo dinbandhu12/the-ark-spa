@@ -228,7 +228,7 @@ const Services = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {normalServices.map((service, index) => (
-              <Card key={index} className={`group hover:shadow-lg transition-all duration-300 ${service.featured ? 'ring-2 ring-primary/20' : ''}`}>
+              <Card key={index} className={`group hover:shadow-lg transition-all duration-300 bg-gradient-to-br from-purple/5 to-purple/10 ${service.featured ? 'ring-2 ring-purple/30' : ''}`}>
                 <CardHeader>
                   <div className="flex items-start justify-between">
                     <div className="flex-1">
@@ -284,7 +284,7 @@ const Services = () => {
 
           {luxuryServices.map((service, index) => (
             <div key={index} className="space-y-12">
-              <Card className="border-2 border-primary/20">
+              <Card className="border-2 border-purple/30 bg-gradient-to-br from-purple/5 to-purple/15">
                 <CardHeader>
                   <CardTitle className="text-2xl mb-4">{service.name}</CardTitle>
                   <p className="text-muted-foreground leading-relaxed">{service.description}</p>
@@ -298,7 +298,7 @@ const Services = () => {
                     </h3>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                       {service.packages.map((pkg, pkgIndex) => (
-                        <Card key={pkgIndex} className="bg-gradient-to-br from-primary/5 to-sage/5">
+                        <Card key={pkgIndex} className="bg-gradient-to-br from-purple/5 to-purple/10">
                           <CardHeader>
                             <CardTitle className="text-lg">{pkg.name}</CardTitle>
                             <div className="text-2xl font-bold text-primary">{pkg.price}</div>
@@ -329,7 +329,7 @@ const Services = () => {
                     </h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       {service.couplePackages.map((pkg, pkgIndex) => (
-                        <Card key={pkgIndex} className="bg-gradient-to-br from-sage/5 to-primary/5">
+                        <Card key={pkgIndex} className="bg-gradient-to-br from-purple/5 to-purple/10">
                           <CardHeader>
                             <CardTitle className="text-lg">{pkg.name}</CardTitle>
                             <div className="text-2xl font-bold text-primary">{pkg.price}</div>
@@ -380,7 +380,7 @@ const Services = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {membershipPackages.map((pkg, index) => (
-              <Card key={index} className={`text-center group hover:shadow-xl transition-all duration-300 ${pkg.featured ? 'ring-2 ring-primary scale-105' : ''}`}>
+              <Card key={index} className={`text-center group hover:shadow-xl transition-all duration-300 bg-gradient-to-br from-purple/3 to-purple/8 ${pkg.featured ? 'ring-2 ring-purple/40 scale-105' : ''}`}>
                 <CardHeader>
                   {pkg.featured && (
                     <Badge className="bg-primary text-primary-foreground w-fit mx-auto mb-4">

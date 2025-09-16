@@ -8,7 +8,10 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 35 20% 98%;
+    /* --background: 340 20% 55%; */
+    /* --background: 339, 29%, 75%; */
+    --background: 339, 37%, 81%;
+    /* --background: 35 20% 98%; */
     --foreground: 25 15% 15%;
 
     --card: 0 0% 100%;
@@ -34,6 +37,9 @@ All colors MUST be HSL.
 
     --sage: 150 25% 65%; 
     --sage-foreground: 0 0% 100%;
+
+    --purple: 280 35% 60%;
+    --purple-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;

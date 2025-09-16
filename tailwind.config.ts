@@ -60,6 +60,10 @@ export default {
 					DEFAULT: 'hsl(var(--sage))',
 					foreground: 'hsl(var(--sage-foreground))'
 				},
+				purple: {
+					DEFAULT: 'hsl(var(--purple))',
+					foreground: 'hsl(var(--purple-foreground))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',

@@ -131,10 +131,10 @@ const Home = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 w-full">
             {services.map((service, index) => (
               <div key={index} className="w-full max-w-full">
-                <div className="bg-white dark:bg-gray-900 rounded-xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 h-full flex flex-col">
+                <div className="bg-purple dark:bg-gray-900 rounded-xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 h-full flex flex-col">
                   {/* Icon */}
                   <div className="mb-6 mx-auto">
-                    <div className="w-16 h-16 sm:w-20 sm:h-20 bg-primary/10 rounded-2xl flex items-center justify-center">
+                    <div className="w-16 h-16 sm:w-20 sm:h-20 bg-white rounded-2xl flex items-center justify-center">
                       <service.icon className="h-8 w-8 sm:h-10 sm:w-10 text-primary" />
                     </div>
                   </div>
@@ -142,7 +142,7 @@ const Home = () => {
                   {/* Content */}
                   <div className="text-center flex-grow">
                     <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-3 sm:mb-4">{service.title}</h3>
-                    <p className="text-muted-foreground leading-relaxed text-base sm:text-lg lg:text-xl mb-6">{service.description}</p>
+                    <p className="text-white leading-relaxed text-base sm:text-lg lg:text-xl mb-6">{service.description}</p>
                   </div>
 
                   {/* Button */}
@@ -171,7 +171,7 @@ const Home = () => {
               <p className="text-lg sm:text-xl text-muted-foreground mb-6 sm:mb-8">
                 Experience the perfect harmony of ancient wellness traditions and modern luxury in our peaceful sanctuary.
               </p>
-              <Button asChild variant="outline" size="lg" className="w-full sm:w-auto">
+              <Button asChild variant="outline" size="lg" className="bg-white/50 w-full sm:w-auto">
                 <Link to="/about">Learn More About Us</Link>
               </Button>
             </div>
