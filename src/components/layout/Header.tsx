@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Leaf } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -38,15 +39,15 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/10 backdrop-blur-md border-border w-full">
       <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between md:justify-center h-16 w-full relative">
+        <div className="flex items-center justify-between md:justify-center h-20 w-full relative">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-1 sm:gap-2 flex-shrink-0 min-w-0 md:absolute md:left-0">
-            <div className="p-1 sm:p-1.5 bg-primary/10 rounded-full">
-              <Leaf className="h-4 w-4 sm:h-5 sm:w-5 text-primary" />
+            <div className="p-0.5 sm:p-0.5">
+              <img src={logo} alt="The Ark Spa Logo" className="h-20 w-24 sm:h-20 sm:w-28 object-contain" />
             </div>
-            <span className="text-lg sm:text-xl font-bold text-foreground truncate">
+            {/* <span className="text-lg sm:text-xl font-bold text-foreground truncate">
               The Ark Spa
-            </span>
+            </span> */}
           </Link>
 
           {/* Desktop Navigation - Centered */}
@@ -55,8 +56,8 @@ const Header = () => {
               <Link
                 key={item.name}
                 to={item.href}
-                className={`text-base font-medium transition-colors hover:text-primary whitespace-nowrap ${
-                  isActive(item.href) ? "text-primary" : "text-white"
+                className={`text-base font-medium transition-colors hover:text-black whitespace-nowrap ${
+                  isActive(item.href) ? "text-black" : "text-white"
                 }`}
               >
                 {item.name}

@@ -24,6 +24,9 @@ export default {
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
+				'foreground-light': 'hsl(var(--foreground-light))',
+				platinum: 'hsl(var(--platinum))',
+				mintgreen: 'hsl(var(--mintgreen))', 
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'
@@ -60,17 +63,13 @@ export default {
 					DEFAULT: 'hsl(var(--sage))',
 					foreground: 'hsl(var(--sage-foreground))'
 				},
-				purple: {
-					DEFAULT: 'hsl(var(--purple))',
-					foreground: 'hsl(var(--purple-foreground))'
+				lavender: {
+					DEFAULT: 'hsl(var(--lavender))',
+					foreground: 'hsl(var(--lavender-foreground))'
 				},
-				'glass-blue': {
-					DEFAULT: 'hsl(var(--glass-blue))',
-					foreground: 'hsl(var(--glass-blue-foreground))'
-				},
-				'mobile-nav-blue': {
-					DEFAULT: 'hsl(var(--mobile-nav-blue))',
-					foreground: 'hsl(var(--mobile-nav-blue-foreground))'
+				byzantium: {
+					DEFAULT: 'hsl(var(--byzantium))',
+					foreground: 'hsl(var(--byzantium-foreground))'
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',

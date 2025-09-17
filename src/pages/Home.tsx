@@ -102,7 +102,7 @@ const Home = () => {
               Wellness & Peace
             </span>
           </h1>
-          <p className="text-lg sm:text-xl md:text-2xl lg:text-2xl text-muted-foreground mb-6 sm:mb-8 max-w-2xl mx-auto px-2">
+          <p className="text-lg sm:text-xl md:text-2xl lg:text-2xl text-black mb-6 sm:mb-8 max-w-2xl mx-auto px-2">
             Escape the ordinary and immerse yourself in pure tranquility at The Ark Spa
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
@@ -117,12 +117,12 @@ const Home = () => {
       </section>
 
       {/* Featured Services */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-secondary/30">
+      <section className="py-12 sm:py-16 lg:py-20 bg-byzantium">
         <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Section Header */}
           <div className="text-center mb-12 sm:mb-16">
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">Our Signature Services</h2>
-            <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto px-2">
+            <p className="text-lg sm:text-xl md:text-2xl text-platinum max-w-2xl mx-auto px-2">
               Discover our carefully curated treatments designed to restore your body, mind, and spirit
             </p>
           </div>
@@ -131,7 +131,7 @@ const Home = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 w-full">
             {services.map((service, index) => (
               <div key={index} className="w-full max-w-full">
-                <div className="bg-purple dark:bg-gray-900 rounded-xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 h-full flex flex-col">
+                <div className="bg-card rounded-xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 h-full flex flex-col">
                   {/* Icon */}
                   <div className="mb-6 mx-auto">
                     <div className="w-16 h-16 sm:w-20 sm:h-20 bg-white rounded-2xl flex items-center justify-center">
@@ -141,8 +141,8 @@ const Home = () => {
 
                   {/* Content */}
                   <div className="text-center flex-grow">
-                    <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-3 sm:mb-4">{service.title}</h3>
-                    <p className="text-white leading-relaxed text-base sm:text-lg lg:text-xl mb-6">{service.description}</p>
+                    <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-3 sm:mb-4 text-foreground">{service.title}</h3>
+                    <p className="text-muted-foreground leading-relaxed text-base sm:text-lg lg:text-xl mb-6">{service.description}</p>
                   </div>
 
                   {/* Button */}
@@ -201,7 +201,7 @@ const Home = () => {
       </section>
 
       {/* Testimonials */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-accent/30 w-full max-w-full overflow-x-hidden">
+      <section className="py-12 sm:py-16 lg:py-20 bg-mintgreen w-full max-w-full overflow-x-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 sm:mb-16">
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">What Our Guests Say</h2>

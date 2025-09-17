@@ -33,14 +33,14 @@ const About = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-gradient-to-b from-secondary/50 to-background">
+      <section className="pt-24 pb-16" style={{background: 'radial-gradient(circle, rgba(110, 101, 199, 1) 10%, rgba(66, 161, 255, 1) 100%)'}}>
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white">
               About
               <span className="block text-primary">The Ark Spa</span>
             </h1>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-xl text-white/80">
               Your journey to wellness and tranquility begins here
             </p>
           </div>

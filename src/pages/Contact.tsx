@@ -41,14 +41,14 @@ const Contact = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-gradient-to-b from-secondary/50 to-background">
+      <section className="pt-24 pb-16" style={{background: 'linear-gradient(0deg, rgba(34, 195, 139, 1) 0%, rgba(45, 48, 253, 1) 100%)'}}>
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white">
               Get In
-              <span className="block text-primary">Touch</span>
+              <span className="block text-white/90">Touch</span>
             </h1>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-xl text-white/80">
               Ready to book your wellness experience? We're here to help you every step of the way
             </p>
           </div>
@@ -92,7 +92,7 @@ const Contact = () => {
             {/* Left Column - Hours & Social Media (35% width) */}
             <div className="lg:col-span-4 space-y-8">
               {/* Hours */}
-              <Card className="bg-gradient-to-br from-purple/5 to-purple/10">
+              <Card className="bg-gradient-to-br from-primary/5 to-sage/5">
                 <CardHeader>
                   <div className="flex items-center gap-3">
                     <div className="p-2 bg-purple/10 rounded-full">
@@ -119,7 +119,7 @@ const Contact = () => {
               </Card>
 
               {/* Social Media */}
-              <Card className="bg-gradient-to-br from-purple/5 to-purple/10">
+              <Card className="bg-gradient-to-br from-primary/5 to-sage/5">
                 <CardHeader>
                   <div className="flex items-center gap-3">
                     <div className="p-2 bg-purple/10 rounded-full">
@@ -150,7 +150,7 @@ const Contact = () => {
 
             {/* Right Column - Location Map (65% width) */}
             <div className="lg:col-span-8">
-              <Card className="bg-gradient-to-br from-purple/5 to-purple/10 h-full">
+              <Card className="bg-gradient-to-br from-primary/5 to-sage/5 h-full">
                 <CardHeader>
                   <div className="flex items-center gap-3">
                     <div className="p-2 bg-purple/10 rounded-full">
@@ -191,40 +191,40 @@ const Contact = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card className="text-center group hover:shadow-xl transition-all duration-300 bg-gradient-to-br from-purple/5 to-purple/10 hover:from-purple/10 hover:to-purple/15">
+            <Card className="text-center group hover:shadow-xl transition-all duration-300 bg-gradient-to-br from-primary/5 to-sage/5 hover:from-purple/10 hover:to-purple/15">
               <CardContent className="p-8">
                 <div className="mb-6 mx-auto w-16 h-16 bg-purple/10 rounded-full flex items-center justify-center group-hover:bg-purple/20 transition-colors">
                   <Phone className="h-8 w-8 text-purple" />
                 </div>
                 <h3 className="text-xl font-semibold mb-4">Call Us</h3>
                 <p className="text-muted-foreground mb-6">Speak directly with our team for immediate booking and personalized service recommendations.</p>
-                <Button className="w-full bg-purple hover:bg-purple/90" asChild>
+                <Button className="w-full bg-primary hover:bg-primary/90" asChild>
                   <a href="tel:+918296846578">Call +91 82968 46578</a>
                 </Button>
               </CardContent>
             </Card>
 
-            <Card className="text-center group hover:shadow-xl transition-all duration-300 bg-gradient-to-br from-purple/5 to-purple/10 hover:from-purple/10 hover:to-purple/15">
+            <Card className="text-center group hover:shadow-xl transition-all duration-300 bg-gradient-to-br from-primary/5 to-sage/5 hover:from-purple/10 hover:to-purple/15">
               <CardContent className="p-8">
                 <div className="mb-6 mx-auto w-16 h-16 bg-purple/10 rounded-full flex items-center justify-center group-hover:bg-purple/20 transition-colors">
                   <Mail className="h-8 w-8 text-purple" />
                 </div>
                 <h3 className="text-xl font-semibold mb-4">Email Us</h3>
                 <p className="text-muted-foreground mb-6">Send us your requirements and we'll get back to you within 24 hours with availability.</p>
-                <Button className="w-full bg-purple hover:bg-purple/90" asChild>
+                <Button className="w-full bg-primary hover:bg-primary/90" asChild>
                   <a href="mailto:theearkspa@gmail.com">Send Email</a>
                 </Button>
               </CardContent>
             </Card>
 
-            <Card className="text-center group hover:shadow-xl transition-all duration-300 bg-gradient-to-br from-purple/5 to-purple/10 hover:from-purple/10 hover:to-purple/15">
+            <Card className="text-center group hover:shadow-xl transition-all duration-300 bg-gradient-to-br from-primary/5 to-sage/5 hover:from-purple/10 hover:to-purple/15">
               <CardContent className="p-8">
                 <div className="mb-6 mx-auto w-16 h-16 bg-purple/10 rounded-full flex items-center justify-center group-hover:bg-purple/20 transition-colors">
                   <Calendar className="h-8 w-8 text-purple" />
                 </div>
                 <h3 className="text-xl font-semibold mb-4">Visit Us</h3>
                 <p className="text-muted-foreground mb-6">Walk in to our spa and speak with our reception team for same-day availability.</p>
-                <Button className="w-full bg-purple hover:bg-purple/90" asChild>
+                <Button className="w-full bg-primary hover:bg-primary/90" asChild>
                   <a href="https://maps.google.com/?q=The+ark+spa" target="_blank" rel="noopener noreferrer">Get Directions</a>
                 </Button>
               </CardContent>
@@ -241,7 +241,7 @@ const Contact = () => {
             Book your appointment today and discover why The Ark Spa is the premier destination for relaxation and rejuvenation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="text-lg px-8 bg-purple hover:bg-purple/90" onClick={() => window.open('tel:+918296846578', '_self')}>
+            <Button size="lg" className="text-lg px-8 bg-primary hover:bg-primary/90" onClick={() => window.open('tel:+918296846578', '_self')}>
               Call Now
             </Button>
             <Button variant="outline" size="lg" className="text-lg px-8" onClick={() => window.open('tel:+918296846578', '_self')}>
