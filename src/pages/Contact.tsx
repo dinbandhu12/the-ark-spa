@@ -26,7 +26,7 @@ const Contact = () => {
       title: "Location",
       details: ["The Ark Spa", "Bangalore, India"],
       action: "Get Directions",
-      link: "https://maps.google.com/?q=The+ark+spa"
+      link: "https://maps.app.goo.gl/DGhEjSkX7AhiGoEy6?g_st=ipc"
     }
   ];
 
@@ -73,7 +73,7 @@ const Contact = () => {
                       </p>
                     ))}
                   </div>
-                  <Button variant="outline" className="w-full" asChild>
+                  <Button variant="outline" className="w-full bg-gradient-to-r from-primary to-sage hover:from-primary/90 hover:to-sage/90 text-white" asChild>
                     <a href={info.link} target={info.link.startsWith('http') ? '_blank' : '_self'} rel={info.link.startsWith('http') ? 'noopener noreferrer' : undefined}>
                       {info.action}
                     </a>
@@ -163,7 +163,7 @@ const Contact = () => {
                 <CardContent className="p-0">
                   <div className="rounded-lg overflow-hidden">
                     <iframe 
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.954595817281!2d77.6520287!3d12.9106398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae150102309305%3A0xfd5c1f8cdf88058e!2sThe%20ark%20spa!5e0!3m2!1sen!2sin!4v1757961991473!5m2!1sen!2sin" 
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248757.24384760653!2d77.47270307239364!3d13.046367513419085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae150102309305%3A0xfd5c1f8cdf88058e!2sThe%20ark%20spa!5e0!3m2!1sen!2sin!4v1758645122873!5m2!1sen!2sin" 
                       width="100%" 
                       height="500" 
                       style={{border: 0}} 
@@ -225,7 +225,7 @@ const Contact = () => {
                 <h3 className="text-xl font-semibold mb-4">Visit Us</h3>
                 <p className="text-muted-foreground mb-6">Walk in to our spa and speak with our reception team for same-day availability.</p>
                 <Button className="w-full bg-primary hover:bg-primary/90" asChild>
-                  <a href="https://maps.google.com/?q=The+ark+spa" target="_blank" rel="noopener noreferrer">Get Directions</a>
+                  <a href="https://maps.app.goo.gl/DGhEjSkX7AhiGoEy6?g_st=ipc" target="_blank" rel="noopener noreferrer">Get Directions</a>
                 </Button>
               </CardContent>
             </Card>
