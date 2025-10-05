@@ -3,6 +3,7 @@ import { Award, Users, Sparkles, Heart } from "lucide-react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import spaAbout from "@/assets/spa-about.jpg";
+import aboutHeroBg from "@/assets/about-hero-bg.jpg";
 
 const About = () => {
   const values = [
@@ -33,12 +34,20 @@ const About = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-16" style={{background: 'radial-gradient(circle, rgba(110, 101, 199, 1) 10%, rgba(66, 161, 255, 1) 100%)'}}>
-        <div className="container mx-auto px-4 lg:px-8">
+      {/* <section className="pt-32 pb-16" style={{background: 'radial-gradient(circle, rgba(110, 101, 199, 1) 10%, rgba(66, 161, 255, 1) 100%)'}}> */}
+      <section className="relative pt-32 pb-24 min-h-[70vh] flex items-center justify-center overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url(${aboutHeroBg})` }}
+        />
+        <div className="absolute inset-0 bg-black/40 backdrop-blur-sm" />
+        <div className="relative z-10 container mx-auto px-4 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white">
               About
-              <span className="block text-primary">The Ark Spa</span>
+              <span className="block text-primary" style={{
+                textShadow: '0 0 10px rgba(89, 0, 255, 0.5), 0 0 20px rgba(89, 0, 255, 0.3), 0 0 30px rgba(89, 0, 255, 0.2)'
+              }}>The Ark Spa</span>
             </h1>
             <p className="text-xl text-white/80">
               Your journey to wellness and tranquility begins here
@@ -86,9 +95,9 @@ const About = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((value, index) => (
-              <Card key={index} className="text-center group hover:shadow-lg transition-all duration-300">
+              <Card key={index} className="text-center group bg-white hover:shadow-lg transition-all duration-300">
                 <CardContent className="p-8">
-                  <div className="mb-6 mx-auto w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                  <div className="mb-6 mx-auto w-16 h-16 bg-primary/30 rounded-full flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                     <value.icon className="h-8 w-8 text-primary" />
                   </div>
                   <h3 className="text-xl font-semibold mb-4">{value.title}</h3>

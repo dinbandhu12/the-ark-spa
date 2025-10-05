@@ -39,11 +39,27 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/10 backdrop-blur-md border-border w-full">
       <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between md:justify-center h-20 w-full relative">
-          {/* Logo */}
+        <div className="flex items-center justify-center md:justify-center h-20 w-full relative">
+          {/* Mobile Menu Button - Right Side */}
+          <button
+            className="md:hidden absolute right-0 p-1 sm:p-2 flex-shrink-0 z-50"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label="Toggle mobile menu"
+            style={{
+              color: 'rgba(255, 255, 255, 0.7)'
+            }}
+          >
+            {isMenuOpen ? (
+              <X className="h-5 w-5 sm:h-6 sm:w-6" />
+            ) : (
+              <Menu className="h-5 w-5 sm:h-6 sm:w-6" />
+            )}
+          </button>
+
+          {/* Logo - Centered on Mobile, Left on Desktop */}
           <Link to="/" className="flex items-center gap-1 sm:gap-2 flex-shrink-0 min-w-0 md:absolute md:left-0">
             <div className="p-0.5 sm:p-0.5">
-              <img src={logo} alt="The Ark Spa Logo" className="h-20 w-24 sm:h-20 sm:w-28 object-contain" />
+              <img src={logo} alt="The Ark Spa Logo" className="h-28 w-32 sm:h-20 sm:w-28 md:h-20 md:w-28 object-contain" />
             </div>
             {/* <span className="text-lg sm:text-xl font-bold text-foreground truncate">
               The Ark Spa
@@ -71,19 +87,6 @@ const Header = () => {
               Book Now
             </Button>
           </div>
-
-          {/* Mobile Menu Button */}
-          <button
-            className="md:hidden p-1 sm:p-2 flex-shrink-0 z-50 relative"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            aria-label="Toggle mobile menu"
-          >
-            {isMenuOpen ? (
-              <X className="h-5 w-5 sm:h-6 sm:w-6 text-foreground" />
-            ) : (
-              <Menu className="h-5 w-5 sm:h-6 sm:w-6 text-foreground" />
-            )}
-          </button>
         </div>
 
         {/* Mobile Navigation */}

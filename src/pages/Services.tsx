@@ -5,6 +5,7 @@ import { Clock, Star, Sparkles, Heart, Crown, Gem, Zap, Droplet, Waves } from "l
 import { useNavigate } from "react-router-dom";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import servicesHeroBg from "@/assets/services-hero-bg.png";
 
 const Services = () => {
   const navigate = useNavigate();
@@ -184,12 +185,23 @@ const Services = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-16" style={{background: 'radial-gradient(circle, rgba(101, 196, 199, 1) 10%, rgba(66, 123, 255, 1) 100%)'}}>
-        <div className="container mx-auto px-4 lg:px-8">
+      {/* <section className="pt-32 pb-16" style={{background: 'radial-gradient(circle, rgba(101, 196, 199, 1) 10%, rgba(66, 123, 255, 1) 100%)'}}> */}
+      <section className="relative pt-32 pb-24 min-h-[70vh] flex items-center justify-center overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url(${servicesHeroBg})` }}
+        />
+        <div className="absolute inset-0 bg-black/40 backdrop-blur-sm" />
+        <div className="relative z-10 container mx-auto px-4 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
+            {/* <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white" style={{
+              textShadow: '0 0 8px rgba(255, 215, 0, 0.4), 0 0 16px rgba(255, 215, 0, 0.3), 0 0 24px rgba(255, 215, 0, 0.2)'
+            }}> */}
             <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white">
               Our
-              <span className="block text-primary">Services</span>
+              <span className="block text-primary" style={{
+                textShadow: '0 0 10px rgba(255, 215, 0, 0.5), 0 0 20px rgba(255, 215, 0, 0.3), 0 0 30px rgba(255, 215, 0, 0.2)'
+              }}>Services</span>
             </h1>
             <p className="text-xl text-white/80">
               Discover our comprehensive range of treatments designed to nurture your wellness journey
@@ -212,7 +224,7 @@ const Services = () => {
               Experience our range of traditional and therapeutic massage treatments
             </p>
             <div className="mt-8">
-              <p className="text-2xl md:text-4xl font-bold text-primary">All services start with ₹ 1999</p>
+              <p className="text-2xl md:text-4xl font-semibold text-primary">All services start with <span className="font-extrabold">₹1999</span></p>
             </div>
           </div>
 

@@ -57,10 +57,10 @@ const Footer = () => {
               </div>
               <div className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 text-primary mt-0.5" />
-                <span className="text-base text-lavender-foreground/80">
+                <a href="https://maps.app.goo.gl/DGhEjSkX7AhiGoEy6?g_st=ipc" target="_blank" rel="noopener noreferrer" className="text-base text-lavender-foreground/80 hover:text-primary transition-colors">
                   The Ark Spa<br />
                   Bangalore, India
-                </span>
+                </a>
               </div>
             </div>
           </div>

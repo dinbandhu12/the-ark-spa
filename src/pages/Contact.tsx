@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Phone, Mail, MapPin, Clock, Instagram, Facebook, Twitter, Calendar, Users, Star } from "lucide-react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import contactHeroBg from "@/assets/contact-hero-bg.webp";
 
 const Contact = () => {
 
@@ -41,12 +42,18 @@ const Contact = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-16" style={{background: 'linear-gradient(0deg, rgba(34, 195, 139, 1) 0%, rgba(45, 48, 253, 1) 100%)'}}>
-        <div className="container mx-auto px-4 lg:px-8">
+      {/* <section className="pt-32 pb-16" style={{background: 'linear-gradient(0deg, rgba(34, 195, 139, 1) 0%, rgba(45, 48, 253, 1) 100%)'}}> */}
+      <section className="relative pt-32 pb-24 min-h-[70vh] flex items-center justify-center overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url(${contactHeroBg})` }}
+        />
+        <div className="absolute inset-0 bg-black/40 backdrop-blur-sm" />
+        <div className="relative z-10 container mx-auto px-4 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white">
               Get In
-              <span className="block text-white/90">Touch</span>
+              <span className="block text-primary">Touch</span>
             </h1>
             <p className="text-xl text-white/80">
               Ready to book your wellness experience? We're here to help you every step of the way
