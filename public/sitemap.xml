@@ -4,17 +4,17 @@
   
   <!-- Homepage -->
   <url>
-    <loc>https://arkspa.netlify.app/</loc>
+    <loc>https://thearkspa.in/</loc>
     <lastmod>2024-01-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://arkspa.netlify.app/assets/spa-hero.jpg</image:loc>
+      <image:loc>https://thearkspa.in/assets/spa-hero.jpg</image:loc>
       <image:title>The Ark Spa - Luxury Wellness & Relaxation</image:title>
       <image:caption>Experience ultimate relaxation at The Ark Spa</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://arkspa.netlify.app/assets/spa-treatment.jpg</image:loc>
+      <image:loc>https://thearkspa.in/assets/spa-treatment.jpg</image:loc>
       <image:title>Spa Treatment Room</image:title>
       <image:caption>Luxurious spa treatment room at The Ark Spa</image:caption>
     </image:image>
@@ -22,17 +22,17 @@
 
   <!-- About Page -->
   <url>
-    <loc>https://arkspa.netlify.app/about</loc>
+    <loc>https://thearkspa.in/about</loc>
     <lastmod>2024-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://arkspa.netlify.app/assets/spa-about.jpg</image:loc>
+      <image:loc>https://thearkspa.in/assets/spa-about.jpg</image:loc>
       <image:title>About The Ark Spa</image:title>
       <image:caption>Peaceful spa meditation space at The Ark Spa</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://arkspa.netlify.app/assets/about-hero-bg.jpg</image:loc>
+      <image:loc>https://thearkspa.in/assets/about-hero-bg.jpg</image:loc>
       <image:title>The Ark Spa About</image:title>
       <image:caption>About The Ark Spa - Your sanctuary of wellness</image:caption>
     </image:image>
@@ -40,17 +40,17 @@
 
   <!-- Services Page -->
   <url>
-    <loc>https://arkspa.netlify.app/services</loc>
+    <loc>https://thearkspa.in/services</loc>
     <lastmod>2024-01-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://arkspa.netlify.app/assets/services-hero-bg.png</image:loc>
+      <image:loc>https://thearkspa.in/assets/services-hero-bg.png</image:loc>
       <image:title>Spa Services</image:title>
       <image:caption>Comprehensive range of spa services at The Ark Spa</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://arkspa.netlify.app/assets/spa-treatment.jpg</image:loc>
+      <image:loc>https://thearkspa.in/assets/spa-treatment.jpg</image:loc>
       <image:title>Spa Treatment Services</image:title>
       <image:caption>Luxury spa treatments and services</image:caption>
     </image:image>
@@ -58,12 +58,12 @@
 
   <!-- Contact Page -->
   <url>
-    <loc>https://arkspa.netlify.app/contact</loc>
+    <loc>https://thearkspa.in/contact</loc>
     <lastmod>2024-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://arkspa.netlify.app/assets/contact-hero-bg.webp</image:loc>
+      <image:loc>https://thearkspa.in/assets/contact-hero-bg.webp</image:loc>
       <image:title>Contact The Ark Spa</image:title>
       <image:caption>Get in touch with The Ark Spa</image:caption>
     </image:image>
@@ -71,57 +71,57 @@
 
   <!-- Gallery Images -->
   <url>
-    <loc>https://arkspa.netlify.app/</loc>
+    <loc>https://thearkspa.in/</loc>
     <lastmod>2024-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
-      <image:loc>https://arkspa.netlify.app/assets/gallery-images/img01.webp</image:loc>
+      <image:loc>https://thearkspa.in/assets/gallery-images/img01.webp</image:loc>
       <image:title>Spa Gallery Image 1</image:title>
       <image:caption>Beautiful spa interior at The Ark Spa</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://arkspa.netlify.app/assets/gallery-images/img02.webp</image:loc>
+      <image:loc>https://thearkspa.in/assets/gallery-images/img02.webp</image:loc>
       <image:title>Spa Gallery Image 2</image:title>
       <image:caption>Serene spa environment at The Ark Spa</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://arkspa.netlify.app/assets/gallery-images/img03.webp</image:loc>
+      <image:loc>https://thearkspa.in/assets/gallery-images/img03.webp</image:loc>
       <image:title>Spa Gallery Image 3</image:title>
       <image:caption>Luxury spa facilities at The Ark Spa</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://arkspa.netlify.app/assets/gallery-images/img04.webp</image:loc>
+      <image:loc>https://thearkspa.in/assets/gallery-images/img04.webp</image:loc>
       <image:title>Spa Gallery Image 4</image:title>
       <image:caption>Relaxing spa atmosphere at The Ark Spa</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://arkspa.netlify.app/assets/gallery-images/img05.webp</image:loc>
+      <image:loc>https://thearkspa.in/assets/gallery-images/img05.webp</image:loc>
       <image:title>Spa Gallery Image 5</image:title>
       <image:caption>Premium spa experience at The Ark Spa</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://arkspa.netlify.app/assets/gallery-images/img06.webp</image:loc>
+      <image:loc>https://thearkspa.in/assets/gallery-images/img06.webp</image:loc>
       <image:title>Spa Gallery Image 6</image:title>
       <image:caption>Wellness sanctuary at The Ark Spa</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://arkspa.netlify.app/assets/gallery-images/img07.webp</image:loc>
+      <image:loc>https://thearkspa.in/assets/gallery-images/img07.webp</image:loc>
       <image:title>Spa Gallery Image 7</image:title>
       <image:caption>Tranquil spa environment at The Ark Spa</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://arkspa.netlify.app/assets/gallery-images/img08.webp</image:loc>
+      <image:loc>https://thearkspa.in/assets/gallery-images/img08.webp</image:loc>
       <image:title>Spa Gallery Image 8</image:title>
       <image:caption>Luxury spa interior at The Ark Spa</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://arkspa.netlify.app/assets/gallery-images/img09.webp</image:loc>
+      <image:loc>https://thearkspa.in/assets/gallery-images/img09.webp</image:loc>
       <image:title>Spa Gallery Image 9</image:title>
       <image:caption>Peaceful spa setting at The Ark Spa</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://arkspa.netlify.app/assets/gallery-images/img10.webp</image:loc>
+      <image:loc>https://thearkspa.in/assets/gallery-images/img10.webp</image:loc>
       <image:title>Spa Gallery Image 10</image:title>
       <image:caption>Serene wellness space at The Ark Spa</image:caption>
     </image:image>

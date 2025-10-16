@@ -36,7 +36,7 @@ export const localBusinessSchema = {
   "@type": "Spa",
   "name": "The Ark Spa",
   "description": "Luxury wellness and relaxation spa offering comprehensive treatments including massage therapy, facials, and body treatments in Bangalore.",
-  "url": "https://arkspa.netlify.app",
+  "url": "https://thearkspa.in",
   "telephone": "+91 82968 46578",
   "email": "theearkspa@gmail.com",
   "address": {
@@ -66,11 +66,11 @@ export const localBusinessSchema = {
     }
   ],
   "image": [
-    "https://arkspa.netlify.app/assets/spa-hero.jpg",
-    "https://arkspa.netlify.app/assets/spa-treatment.jpg",
-    "https://arkspa.netlify.app/assets/spa-about.jpg"
+    "https://thearkspa.in/assets/spa-hero.jpg",
+    "https://thearkspa.in/assets/spa-treatment.jpg",
+    "https://thearkspa.in/assets/spa-about.jpg"
   ],
-  "logo": "https://arkspa.netlify.app/assets/logo.png",
+  "logo": "https://thearkspa.in/assets/logo.png",
   "sameAs": [
     "https://www.instagram.com/thearkspa"
   ],
@@ -162,8 +162,8 @@ export const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "The Ark Spa",
-  "url": "https://arkspa.netlify.app",
-  "logo": "https://arkspa.netlify.app/assets/logo.png",
+  "url": "https://thearkspa.in",
+  "logo": "https://thearkspa.in/assets/logo.png",
   "description": "Luxury wellness and relaxation spa in Bangalore offering comprehensive treatments for body, mind, and spirit.",
   "foundingDate": "2018",
   "address": {

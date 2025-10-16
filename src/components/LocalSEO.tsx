@@ -54,7 +54,7 @@ export const localSEOConfig = {
   contact: {
     phone: '+91 82968 46578',
     email: 'theearkspa@gmail.com',
-    website: 'https://arkspa.netlify.app'
+    website: 'https://thearkspa.in'
   },
   hours: {
     monday: '10:30 AM - 9:00 PM',
@@ -158,11 +158,11 @@ export const enhancedLocalBusinessSchema = {
     }
   ],
   "image": [
-    "https://arkspa.netlify.app/assets/spa-hero.jpg",
-    "https://arkspa.netlify.app/assets/spa-treatment.jpg",
-    "https://arkspa.netlify.app/assets/spa-about.jpg"
+    "https://thearkspa.in/assets/spa-hero.jpg",
+    "https://thearkspa.in/assets/spa-treatment.jpg",
+    "https://thearkspa.in/assets/spa-about.jpg"
   ],
-  "logo": "https://arkspa.netlify.app/assets/logo.png",
+  "logo": "https://thearkspa.in/assets/logo.png",
   "sameAs": [
     "https://www.instagram.com/thearkspa"
   ],
