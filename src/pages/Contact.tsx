@@ -3,9 +3,14 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Phone, Mail, MapPin, Clock, Instagram, Facebook, Twitter, Calendar, Users, Star } from "lucide-react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import { useSEO } from "@/hooks/useSEO";
+import { seoConfig } from "@/config/seoConfig";
+import { StructuredData, localBusinessSchema, faqSchema } from "@/components/StructuredData";
 import contactHeroBg from "@/assets/contact-hero-bg.webp";
 
 const Contact = () => {
+  // Set up SEO for this page
+  useSEO(seoConfig.contact);
 
   const contactInfo = [
     {
@@ -39,6 +44,8 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen">
+      <StructuredData data={localBusinessSchema} />
+      <StructuredData data={faqSchema} />
       <Header />
       
       {/* Hero Section */}

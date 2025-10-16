@@ -2,10 +2,16 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Award, Users, Sparkles, Heart } from "lucide-react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import { useSEO } from "@/hooks/useSEO";
+import { seoConfig } from "@/config/seoConfig";
+import { StructuredData, organizationSchema } from "@/components/StructuredData";
 import spaAbout from "@/assets/spa-about.jpg";
 import aboutHeroBg from "@/assets/about-hero-bg.jpg";
 
 const About = () => {
+  // Set up SEO for this page
+  useSEO(seoConfig.about);
+
   const values = [
     {
       icon: Heart,
@@ -31,6 +37,7 @@ const About = () => {
 
   return (
     <div className="min-h-screen">
+      <StructuredData data={organizationSchema} />
       <Header />
       
       {/* Hero Section */}

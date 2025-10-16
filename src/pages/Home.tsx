@@ -5,6 +5,10 @@ import { Sparkles, Heart, Leaf, Star } from "lucide-react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Gallery from "@/components/Gallery";
+import { useSEO } from "@/hooks/useSEO";
+import { seoConfig } from "@/config/seoConfig";
+import { StructuredData, localBusinessSchema, reviewsSchema } from "@/components/StructuredData";
+import { enhancedLocalBusinessSchema } from "@/components/LocalSEO";
 import spaHero from "@/assets/spa-hero.jpg";
 import spaTreatment from "@/assets/spa-treatment.jpg";
 import img01 from "@/assets/gallery-images/img01.webp";
@@ -19,6 +23,8 @@ import img09 from "@/assets/gallery-images/img09.webp";
 import img10 from "@/assets/gallery-images/img10.webp";
 
 const Home = () => {
+  // Set up SEO for this page
+  useSEO(seoConfig.home);
 
   const services = [
     {
@@ -85,6 +91,8 @@ const Home = () => {
 
   return (
     <div className="min-h-screen w-full max-w-full overflow-x-hidden">
+      <StructuredData data={enhancedLocalBusinessSchema} />
+      <StructuredData data={reviewsSchema} />
       <Header />
       
       {/* Hero Section */}

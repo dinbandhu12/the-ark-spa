@@ -5,10 +5,16 @@ import { Clock, Star, Sparkles, Heart, Crown, Gem, Zap, Droplet, Waves } from "l
 import { useNavigate } from "react-router-dom";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import { useSEO } from "@/hooks/useSEO";
+import { seoConfig } from "@/config/seoConfig";
+import { StructuredData, localBusinessSchema } from "@/components/StructuredData";
 import servicesHeroBg from "@/assets/services-hero-bg.png";
 
 const Services = () => {
   const navigate = useNavigate();
+
+  // Set up SEO for this page
+  useSEO(seoConfig.services);
 
   const handleBookNow = () => {
     navigate('/contact');
@@ -182,6 +188,7 @@ const Services = () => {
 
   return (
     <div className="min-h-screen">
+      <StructuredData data={localBusinessSchema} />
       <Header />
       
       {/* Hero Section */}
