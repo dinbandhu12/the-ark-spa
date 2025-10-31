@@ -115,7 +115,7 @@ const Home = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
             <Button size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 w-full sm:w-auto">
-              Book Your Experience
+              <Link to="/contact">Book Your Experience</Link>
             </Button>
             <Button variant="outline" size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 w-full sm:w-auto">
               <Link to="/services">Explore Services</Link>

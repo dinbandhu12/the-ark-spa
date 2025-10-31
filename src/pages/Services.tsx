@@ -230,9 +230,9 @@ const Services = () => {
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Experience our range of traditional and therapeutic massage treatments
             </p>
-            <div className="mt-8">
+            {/* <div className="mt-8">
               <p className="text-2xl md:text-4xl font-semibold text-primary">All services start with <span className="font-extrabold">₹1999</span></p>
-            </div>
+            </div> */}
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
